@@ -10,7 +10,8 @@ dotenv.config({ path: "./config/config.env"});
 
 app.use(
     cors({
-        origin: [process.env.FRONTEND_URI],
+        //origin: [process.env.FRONTEND_URI],
+        origin: 'https://mern-stack-event-project-phi.vercel.app',
         methods: ["POST"],
         credentials: true,
     })
